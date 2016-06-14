@@ -1,16 +1,15 @@
-var i=process.argv[2];
+var i=parseInt(process.argv[2],10);
 var sum = 0;
-for(var j = 1; j <= i; j++) {
+for( var j = 1; j <= i; j++) {
 	//console.log(sum);
 	//console.log(process.argv[j]);
-	if ((j%3 == 0)| (j%5==0))
+	if ((j%3 == 0)|| (j%5==0))
 	sum = sum + j;
 }
 console.log(sum);
 var sum3=0;
 var an3=0;
 an3=Math.floor(i/3)*3;
-an3=an3*3;
 var n3=0;
 n3=(an3-3)/3+1;
 sum3=n3/2*(2*3+(n3-1)*3);
