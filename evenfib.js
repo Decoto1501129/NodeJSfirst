@@ -9,6 +9,9 @@ while(j <= i) {
 	j=next;
 	console.log(j);
 	//console.log(process.argv[j]);
-	if (j%2 == 0) sum = sum + j;
+	if (j%2 == 0) 
+	{
+		sum = sum + j;
+		console.log("sum:"+sum);}
 }
-console.log(sum);
+console.log("final even sum" +sum);
