@@ -1,0 +1,28 @@
+function processData(input) {
+var x=input.toString().split('\n');
+x.forEach(Sum35)
+}      
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+_input = "";
+process.stdin.on("data", function (input) {
+    _input += input;
+});
+
+process.stdin.on("end", function () {
+   processData(_input);
+});
+
+function Sum35(element,index,array) {    
+var i=element;
+var sum = 0;
+for( var j = 1; j < i; j++) {
+	//console.log(sum);
+	//console.log(process.argv[j]);
+	if ((j%3 == 0)|| (j%5==0))
+	sum = sum + j;
+}
+if (sum>0)
+console.log(sum);
+}
