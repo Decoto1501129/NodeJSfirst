@@ -1,6 +1,7 @@
 function processData(input) {
 var x=input.toString().split('\n');
-x.forEach(Sum35)
+for (var y=1;y<=x[0];y++)
+    Sum35(x[y]);    
 }      
 
 process.stdin.resume();
@@ -14,7 +15,7 @@ process.stdin.on("end", function () {
    processData(_input);
 });
 
-function Sum35(element,index,array) {    
+function Sum35(element) {    
 var i=element;
 var sum = 0;
 for( var j = 1; j < i; j++) {
@@ -23,6 +24,5 @@ for( var j = 1; j < i; j++) {
 	if ((j%3 == 0)|| (j%5==0))
 	sum = sum + j;
 }
-if (sum>0)
 console.log(sum);
 }
